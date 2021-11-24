@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>BanderaCorazon</title>
+    <style>
+        div {
+            width: 10%;
+            height: 100px;
+            margin: 0px;
+            display: inline-block;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #blanco {
+            background-color: white;
+            border-style: solid;
+            border-color: black;
+        }
+
+        img {
+            width: 100px;
+            margin: 0px auto;
+            display: inline;
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        img:hover {
+            transform: scale(2);
+        }
+
+        div:hover {
+            transform: skewX(-35deg);
+
+        }
+
+        .luna {
+
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: 25px 10px 0;
+        }
+
+        .luna:hover {
+            background-color: gold;
+            transform: skewX(0deg);
+        }
+
+        .corazon {
+            position: absolute;
+            margin:  auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            transform: rotate(-45deg);
+        }
+
+        .corazon::after {
+            background-color: red;
+            content: "after";
+            border-radius: 50%;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0px;
+            left: 50px;
+        }
+
+        .corazon::before {
+            background-color:green;
+            content: "before";
+            border-radius: 50%;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: 0px;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="verde"></div>
+    <div id="blanco">
+
+        <img id="aguila"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ04b3_To9DhIKad_sv8GnhqudUzKEzx5Gk7g&usqp=CAU"
+            alt="Aguila de escudo de Mexico">
+    </div>
+    <div id="rojo"></div>
+
+    <div class="luna"> </div>
+
+    <div class="corazon"></div>
+
+
+</body>
+
+</html>
